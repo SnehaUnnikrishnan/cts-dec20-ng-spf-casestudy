@@ -1,0 +1,22 @@
+create table contactdetails(
+`contact_id` int(10) primary key not null,
+`name` varchar(50),
+`contact_no` varchar(14),
+`date_of_birth` date,
+PRIMARY KEY (`contact_id`)
+  ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+DROP TABLE IF EXISTS `contactdetails`;
+insert into contactdetails values(234352,'Arun','9456382716','2015-02-18');
+insert into contactdetails values(234353,'Jyothi','8675462376','2016-10-02');
+insert into contactdetails values(234354,'Rakesh','6538291090','2016-07-28');
+insert into contactdetails values(234355,'John','8085237896','2012-04-10');
+
+
+select * from contactdetails;
+
+create table Login(username varchar(20) primary key,pass varchar(20));
+
+insert into Login value("login","login@123");
+
+
+select * from Login;
